@@ -1,4 +1,4 @@
-FROM    debian:wheezy
+FROM ubuntu:trusty
 MAINTAINER Josh Cox <josh 'at' webhosting coop>
 
 RUN apt-get -y update
@@ -11,7 +11,7 @@ RUN pip install ansible
 
 RUN apt-get clean
 
-WORKDIR /tmp/ansible
+# WORKDIR /tmp/ansible
 # ENV PATH /tmp/ansible/bin:/sbin:/usr/sbin:/usr/bin
 # ENV ANSIBLE_LIBRARY /tmp/ansible/library
 # ENV PYTHONPATH /tmp/ansible/lib:$PYTHON_PATH
