@@ -12,9 +12,9 @@ RUN pip install ansible
 RUN apt-get clean
 
 WORKDIR /tmp/ansible
-ENV PATH /tmp/ansible/bin:/sbin:/usr/sbin:/usr/bin
-ENV ANSIBLE_LIBRARY /tmp/ansible/library
-ENV PYTHONPATH /tmp/ansible/lib:$PYTHON_PATH
+# ENV PATH /tmp/ansible/bin:/sbin:/usr/sbin:/usr/bin
+# ENV ANSIBLE_LIBRARY /tmp/ansible/library
+# ENV PYTHONPATH /tmp/ansible/lib:$PYTHON_PATH
 # Example usage
 # RUN git clone http://github.com/yourusername/yourrepo.git /tmp/example
 # ADD inventory /etc/ansible/hosts
