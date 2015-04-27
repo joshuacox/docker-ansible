@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 MAINTAINER Josh Cox <josh 'at' webhosting coop>
 
-ENV DOCKER_ANSIBLE_UPDATED 20150426
+ENV DOCKER_ANSIBLE_UPDATED 20150427
 RUN apt-get -y update
 RUN apt-get install -y python-yaml python-jinja2 git python python-dev python-pip python-virtualenv
 RUN rm -rf /var/lib/apt/lists/*
