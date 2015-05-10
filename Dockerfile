@@ -21,9 +21,9 @@ RUN apt-get clean
 # ENV ANSIBLE_LIBRARY /tmp/ansible/library
 # ENV PYTHONPATH /tmp/ansible/lib:$PYTHON_PATH
 # Example usage
+# WORKDIR /tmp/example
 # RUN git clone http://github.com/yourusername/yourrepo.git /tmp/example
 # ADD inventory /etc/ansible/hosts
-# WORKDIR /tmp/examples
 # RUN ansible-playbook site.yml -c local
 # EXPOSE 22 3000
 # ENTRYPOINT [“/usr/bin/foo”]
